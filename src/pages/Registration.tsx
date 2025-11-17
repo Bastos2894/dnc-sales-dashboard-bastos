@@ -13,7 +13,7 @@ function Registration() {
         <Box display={{ xs: 'block', sm: 'flex' }} minHeight="100vh">
           <Box flex={1} display="flex" alignItems="center" sx={{ p: 2 }}>
             <Container maxWidth="sm">
-              <h1>Cadastro</h1>
+              <h1>Cadastros</h1>
             </Container>
           </Box>
 
