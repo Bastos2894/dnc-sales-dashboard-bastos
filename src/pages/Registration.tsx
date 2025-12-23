@@ -1,5 +1,5 @@
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
+import {Box} from '@mui/material'
+import {Container} from '@mui/material'
 // usando Box responsivo ao invés de Grid para evitar conflitos de typings
 import { BannerImage } from '../components'
 
