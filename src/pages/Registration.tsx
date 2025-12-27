@@ -1,7 +1,8 @@
-import Box from '@mui/material/Box'
-import Container from '@mui/material/Container'
-// usando Box responsivo ao invés de Grid para evitar conflitos de typings
-import { BannerImage, FormComponent } from '../components'
+import {Box, colors, Container} from '@mui/material'
+import { BannerImage, FormComponent, StyledH1, StyledP,StyledUL, Logo } from '../components'
+import { pxToRem } from 'src/utils'
+import type { ClassNames } from '@emotion/react'
+
 
 
 
@@ -13,7 +14,17 @@ function Registration() {
         <Box display={{ xs: 'block', sm: 'flex' }} minHeight="100vh">
           <Box flex={1} display="flex" alignItems="center" sx={{ p: 2 }}>
             <Container maxWidth="sm">
-              <h1>Cadastros</h1>
+              <Box sx = {{marginBottom: pxToRem(24)}}><Logo height={41} width={100}/></Box>
+              <Box sx = {{marginBottom: pxToRem(24)}}>
+                <StyledH1>Faça o seu cadastro</StyledH1>
+                <StyledP>Priemiro, diga-nos quem você é.</StyledP>
+                <StyledUL>
+                  <li>Entre 8 e 16 caracteres;</li>
+                  <li>Pelo menos uma letra maiúscula;</li>
+                  <li>Pelo menos um caractere especial.</li>
+                  <li>Pelo menos um número</li>
+                </StyledUL>
+              </Box>
               <FormComponent inputs={[
                 {type: 'email', placeholder: 'Email'},
                 {type: 'password', placeholder: 'Senha'}
