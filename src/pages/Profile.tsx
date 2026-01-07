@@ -1,6 +1,10 @@
+import {Header} from 'src/components'
+
+
 function Profile() {
   return (
     <>
+      <Header/>
       <h1>Profile</h1>
     </>
   )
